@@ -87,5 +87,9 @@
      - n by p matrix of covariates X with n>p.
    - ultimately the notebook shows the number of rejections by our method and off-the-shelf competitors.
 9) Running the Code "biometrics figures.py": This code generates all the figures in Figure 1. Run the code without any modifications and you will get the figures in PNG format.
-10) 
+10) Reproducing the GWAS example in the paper
+    - Running the Code "LD_Pruning.ipynb": This code prepares data for GWAS. Step by step guide is given in the notebook with the output.
+    - Running the code "GWAS_biometrics.ipynb": This code runs GWAS analysis with input data prepared in the last step. Output is given in the notebook.
+    - Running the code "biometrics_GWAS_analysis.ipynb": This code can be used to generate Figure 2 and Table 4. Step by step guide is given in the notebook with the output.
+
    
