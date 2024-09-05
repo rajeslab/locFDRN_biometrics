@@ -86,5 +86,6 @@
      - n by 1 vector of phenotype y
      - n by p matrix of covariates X with n>p.
    - ultimately the notebook shows the number of rejections by our method and off-the-shelf competitors.
-9)
+9) Running the Code "biometrics figures.py": This code generates all the figures in Figure 1. Run the code without any modifications and you will get the figures in PNG format.
+10) 
    
