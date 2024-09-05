@@ -81,9 +81,10 @@
         - np.savetxt("RC_compare_lcfdrNvslcfdr_pi_03.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2]))),fmt='%1.4f', delimiter=",")
    - The entries of the CSV file exactly match the entries of Table S4 in the paper.
 8) Running the notebook "real_data_biometrics.ipynb":
-   - This notebook contains instructions on applying our method to your dataset, our example is given with simulated dataset (y,X).
+   - This notebook contains instructions on applying our method to your dataset, our example is given with a simulated dataset (y, X).
    - Input data:
      - n by 1 vector of phenotype y
      - n by p matrix of covariates X with n>p.
-   - ultimately the notebook shows the rejection by our method and off-the-shelf competitors.
+   - ultimately the notebook shows the number of rejections by our method and off-the-shelf competitors.
+9)
    
