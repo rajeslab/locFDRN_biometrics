@@ -5,7 +5,7 @@
    - set ndraws = 3000 at line 135
    - set rep = 3000 at line 168
    - set filename 'RC_01_1K.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_or_01_1K.csv" in csv format
+   - Then run the following Python code to get dataset "RC_or_01_1K.csv" in CSV format
         - import numpy as np
         - arr = np.load("RC_01_1K.npy")
         - np.savetxt("RC_or_01_1K.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2],arr[3]))),fmt='%1.4f', delimiter=",")
@@ -17,7 +17,7 @@
    - set ndraws = 500 at line 135
    - set rep = 500 at line 168
    - set filename 'RC_01_10K.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_or_01_10K.csv" in csv format
+   - Then run the following Python code to get dataset "RC_or_01_10K.csv" in CSV format
         - import numpy as np
         - arr = np.load("RC_01_10K.npy")
         - np.savetxt("RC_or_01_10K.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2],arr[3]))),fmt='%1.4f', delimiter=",")
@@ -29,7 +29,7 @@
    - set ndraws = 500 at line 135
    - set rep = 500 at line 168
    - set filename 'RC_03_10K.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_or_03_10K.csv" in csv format
+   - Then run the following Python code to get dataset "RC_or_03_10K.csv" in CSV format
         - import numpy as np
         - arr = np.load("RC_03_10K.npy")
         - np.savetxt("RC_or_03_10K.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2],arr[3]))),fmt='%1.4f', delimiter=",")
@@ -41,7 +41,7 @@
    - set ndraws = 3000 at line 135
    - set rep = 3000 at line 168
    - set filename 'RC_03_1K.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_or_03_1K.csv" in csv format
+   - Then run the following Python code to get dataset "RC_or_03_1K.csv" in CSV format
         - import numpy as np
         - arr = np.load("RC_03_1K.npy")
         - np.savetxt("RC_or_03_1K.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2],arr[3]))),fmt='%1.4f', delimiter=",")
@@ -52,7 +52,7 @@
    - set filename 'RC_dd_01_15K.npy' to save simulation data.
    - Set pi = 0.3 at line 197
    - set filename 'RC_dd_03_15K.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_dd_03_01_15K.csv" in csv format
+   - Then run the following Python code to get dataset "RC_dd_03_01_15K.csv" in CSV format
         - import numpy as np
         - arr1 = np.load("RC_dd_03_15K.npy")
         - arr2 = np.load("RC_dd_01_15K.npy")
@@ -65,7 +65,7 @@
    - Set K = 1400 at line 120
    - Set pi = 0.1 at line 124
    - set filename 'RC_compare_lcfdrNvslcfdr_pi_01.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_compare_lcfdrNvslcfdr_pi_01.csv" in csv format
+   - Then run the following Python code to get dataset "RC_compare_lcfdrNvslcfdr_pi_01.csv" in CSV format
         - import numpy as np
         - arr = np.load("RC_compare_lcfdrNvslcfdr_pi_01.npy")
         - np.savetxt("RC_compare_lcfdrNvslcfdr_pi_01.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2]))),fmt='%1.4f', delimiter=",")
@@ -75,9 +75,15 @@
    - Set K = 700 at line 120
    - Set pi = 0.3 at line 124
    - set filename 'RC_compare_lcfdrNvslcfdr_pi_03.npy' to save simulation data.
-   - Then run the following Python code to get dataset "RC_compare_lcfdrNvslcfdr_pi_03.csv" in csv format
+   - Then run the following Python code to get dataset "RC_compare_lcfdrNvslcfdr_pi_03.csv" in CSV format
         - import numpy as np
         - arr = np.load("RC_compare_lcfdrNvslcfdr_pi_03.npy")
         - np.savetxt("RC_compare_lcfdrNvslcfdr_pi_03.csv", np.transpose(np.concatenate((arr[0],arr[1],arr[2]))),fmt='%1.4f', delimiter=",")
    - The entries of the CSV file exactly match the entries of Table S4 in the paper.
+8) Running the notebook "real_data_biometrics.ipynb":
+   - This notebook contains instructions on applying our method to your dataset, our example is given with simulated dataset (y,X).
+   - Input data:
+     - n by 1 vector of phenotype y
+     - n by p matrix of covariates X with n>p.
+   - ultimately the notebook shows the rejection by our method and off-the-shelf competitors.
    
