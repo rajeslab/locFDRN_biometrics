@@ -91,5 +91,7 @@
     - Running the Code "LD_Pruning.ipynb": This code prepares data for GWAS. Step by step guide is given in the notebook with the output.
     - Running the code "GWAS_biometrics.ipynb": This code runs GWAS analysis with input data prepared in the last step. Output is given in the notebook.
     - Running the code "biometrics_GWAS_analysis.ipynb": This code can be used to generate Figure 2 and Table 4. Step by step guide is given in the notebook with the output.
+11) The folder "ancillary data" contains the data/functions that you need to keep in the working directory to run the codes.
+12) The folder "paper data" contains the data that you will get after running our code.
 
    
